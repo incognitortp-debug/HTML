@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#160d20" />
+  <meta name="description" content="Una sorpresa especial para celebrar nuestra historia." />
+  <title>Para ti, Por tu dia | Feliz Cumpleaños</title>
+
+  <!-- Conexión con CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Conexión con JavaScript -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Corazones animados de fondo -->
+  <div class="hearts-layer" id="heartsLayer" aria-hidden="true"></div>
+
+  <!-- 1. PANTALLA INICIAL CON HUELLA DIGITAL -->
+  <section class="intro-screen" id="introScreen" aria-labelledby="introTitle">
+    <div class="intro-panel">
+
+      <p class="eyebrow eyebrow-pill">EDICIÓN ESPECIAL SOLO POR TU CUMPLEAÑOS</p>
+
+      <h1 class="script-title intro-title" id="introTitle">
+        Para ti, Por tu dia
+      </h1>
+
+      <button class="fingerprint-button" id="unlockButton" type="button"
+              aria-label="Toca la huella para abrir la sorpresa">
+
+        <span class="fingerprint-ring"></span>
+
+        <svg class="fingerprint-icon" viewBox="0 0 100 100"
+             fill="none" stroke="currentColor"
+             stroke-linecap="round" stroke-width="2.7"
+             aria-hidden="true">
+          <path d="M25 44c0-16 11-27 25-27s25 11 25 27"/>
+          <path d="M18 45c0-20 14-35 32-35s32 15 32 35"/>
+          <path d="M32 46c0-12 8-20 18-20s18 8 18 20"/>
+          <path d="M39 48c0-8 5-13 11-13s11 5 11 13"/>
+          <path d="M50 45c0 16-1 29-7 43"/>
+          <path d="M59 54c0 14-1 24-5 36"/>
+          <path d="M68 55c0 13-2 23-5 30"/>
+          <path d="M32 56c0 13-3 21-7 27"/>
+          <path d="M41 56c0 14-2 25-7 34"/>
+          <path d="M23 55c0 7-1 13-3 18"/>
+          <path d="M76 55c0 8-1 14-3 20"/>
+        </svg>
+
+      </button>
+
+      <p class="intro-status" id="introStatus" aria-live="polite">
+        Toca la huella para desbloquear una historia ♡
+      </p>
+
+      <span class="intro-sparkle intro-sparkle-left" aria-hidden="true">✦</span>
+      <span class="intro-sparkle intro-sparkle-right" aria-hidden="true">✧</span>
+
+    </div>
+  </section>
+
+  <!-- 2. PÁGINA PRINCIPAL DE ANIVERSARIO -->
+  <main class="experience" id="experience" hidden>
+
+    <div class="anniversary-panel">
+
+      <header class="anniversary-header">
+
+        <p class="eyebrow">
+          CELEBRANDO UNA HISTORIA DEL 2026
+        </p>
+
+        <h2 class="script-title anniversary-title">
+          Feliz<br />Cumpleaños
+        </h2>
+
+        <p class="anniversary-date" id="anniversaryDate">
+          DESDE EL 13 DE OCTUBRE DE 2008
+        </p>
+
+        <p class="romantic-line">
+          Cada segundo a tu lado es una alegria que no se pierde
+        </p>
+
+      </header>
+
+      <!-- 3. CONTADOR DE TIEMPO -->
+      <section class="timer" aria-label="Tiempo que llevamos juntos">
+
+        <div class="time-box">
+          <strong id="days">0</strong>
+          <span>DÍAS</span>
+        </div>
+
+        <div class="time-box">
+          <strong id="hours">00</strong>
+          <span>HORAS</span>
+        </div>
+
+        <div class="time-box">
+          <strong id="minutes">00</strong>
+          <span>MINUTOS</span>
+        </div>
+
+        <div class="time-box">
+          <strong id="seconds">00</strong>
+          <span>SEGUNDOS</span>
+        </div>
+
+      </section>
+
+      <!-- 4. SOBRE ANIMADO -->
+      <section class="letter-section" aria-label="Carta sorpresa">
+
+        <button class="envelope" id="envelopeButton" type="button"
+                aria-label="Abre el sobre para leer tu carta de amor">
+
+          <span class="envelope-back"></span>
+
+          <span class="envelope-letter" aria-hidden="true">
+            Para ti ♡
+          </span>
+
+          <span class="envelope-flap"></span>
+
+          <span class="envelope-side envelope-left"></span>
+
+          <span class="envelope-side envelope-right"></span>
+
+          <span class="envelope-front"></span>
+
+          <span class="envelope-seal" aria-hidden="true">♥</span>
+
+        </button>
+
+        <p class="letter-hint">
+          Toca el sobre para abrir esta carta que hice para ti
+        </p>
+
+      </section>
+
+      <!-- 5. TRES TARJETAS SORPRESA -->
+      <section class="promises" aria-labelledby="promisesTitle">
+
+        <h2 class="section-heading" id="promisesTitle">
+          TRES PROMESAS PARA UN MEJOR FUTURO
+        </h2>
+
+        <p class="section-subtitle">
+          Toca cada tarjeta para descubrir un pasado, presente y futuro
+        </p>
+
+        <div class="promise-grid">
+
+          <!-- TARJETA 1 -->
+          <button class="promise-card" type="button" aria-expanded="false">
+
+            <span class="promise-inner">
+
+              <span class="promise-face promise-front">
+
+                <span class="promise-symbol" aria-hidden="true">✦</span>
+
+                <span class="promise-title">
+                  I. NUESTRO AYER
+                </span>
+
+                <span class="promise-note">
+                  Toca para recordar
+                </span>
+
+              </span>
+
+              <span class="promise-face promise-back" aria-hidden="true">
+                Gracias por cada recuerdo que hemos construido.
+                Volvería a elegir cada momento contigo. ♥
+              </span>
+
+            </span>
+
+          </button>
+
+          <!-- TARJETA 2 -->
+          <button class="promise-card" type="button" aria-expanded="false">
+
+            <span class="promise-inner">
+
+              <span class="promise-face promise-front">
+
+                <span class="promise-symbol" aria-hidden="true">♥</span>
+
+                <span class="promise-title">
+                  II. NUESTRO HOY
+                </span>
+
+                <span class="promise-note">
+                  Toca para sonreír
+                </span>
+
+              </span>
+
+              <span class="promise-face promise-back" aria-hidden="true">
+                Prometo valorar nuestras pequeñas alegrías
+                y acompañarte con cariño cada día. ♡
+              </span>
+
+            </span>
+
+          </button>
+
+          <!-- TARJETA 3 -->
+          <button class="promise-card" type="button" aria-expanded="false">
+
+            <span class="promise-inner">
+
+              <span class="promise-face promise-front">
+
+                <span class="promise-symbol" aria-hidden="true">∞</span>
+
+                <span class="promise-title">
+                  III. NUESTRO MAÑANA
+                </span>
+
+                <span class="promise-note">
+                  Toca para soñar
+                </span>
+
+              </span>
+
+              <span class="promise-face promise-back" aria-hidden="true">
+                Que nunca nos falten los sueños, el respeto
+                y las ganas de seguir creando recuerdos juntos. ✨
+              </span>
+
+            </span>
+
+          </button>
+
+        </div>
+
+      </section>
+
+      <footer class="footer-message">
+        Hecho con todo mi cariño ♡
+      </footer>
+
+    </div>
+
+  </main>
+
+  <!-- 6. CARTA DE ANIVERSARIO -->
+  <div class="letter-modal" id="letterModal" hidden>
+
+    <div class="modal-backdrop" data-close="letter"></div>
+
+    <section class="letter-paper" role="dialog"
+             aria-modal="true"
+             aria-labelledby="letterTitle"
+             aria-describedby="letterContent"
+             tabindex="-1">
+
+      <button class="close-button" id="closeLetter"
+              type="button" aria-label="Cerrar carta">
+        ×
+      </button>
+
+      <div class="paper-decoration" aria-hidden="true">
+        ✦ FELIZ CUMPLEAÑOS ✦
+      </div>
+
+      <h2 class="letter-title script-title" id="letterTitle">
+        TE DESEO LO MEJOR,
+      </h2>
+
+      <div class="letter-content" id="letterContent">
+
+        <p>
+          Hoy celebramos un dia especial más 
+          hermoso que el destino puso en nuestos caminos:
+          coincidir contigo y hablarnos cada día desde entonces.
+        </p>
+
+        <blockquote>
+          “Si pudiera volver al primer día en que te vi,
+          te buscaría aún más rápido solo para tener un
+          poquito más de tiempo contigo.”
+        </blockquote>
+
+        <p>
+          Gracias por las risas, los recuerdos y las
+          aventuras que todavía nos esperan.
+          Que esta historia siga llenándose de momentos especiales.
+        </p>
+
+      </div>
+
+      <p class="letter-signature script-title">
+        — Hecho por tu amigo BSRL ♥
+      </p>
+
+    </section>
+
+  </div>
+
+</body>
+</html>
